@@ -14,12 +14,13 @@
         v
 x-->hypothesis (h)--> y
 ```
-h(x) = $\theta_0$+ $\theta_1$x  
-Equation for *Linear Regression*.
+    h(x) = $\theta_0$+ $\theta_1$x  
+    Equation for *Linear Regression*.
 
 - The **Mean Squre Error** cost function is the most common **Cost Funciton** in Regression problems, for linear regression, the function is defined as follows:
 
-$J(\theta_0,theta_1)=\frac{1}{2m}\sum_{i=1}^m (h_\theta(x^i)-y^i)$
+    $J(\theta_0,\theta_1)=\frac{1}{2m}\sum_{i=1}^m (h_\theta(x^i)-y^i)^2$
+
 
 
 
