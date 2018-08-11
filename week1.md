@@ -14,12 +14,15 @@
         v
 x-->hypothesis (h)--> y
 ```
-    $h(x)=\theta_0+\theta_1x$
-    Equation for *Linear Regression*.
+- $h(x)=\theta_0+\theta_1x$
+Equation for *Linear Regression*.
 
 - The **Mean Squre Error** cost function is the most common **Cost Funciton** in Regression problems, for linear regression, the function is defined as follows:
 
     $J(\theta_0,\theta_1)=\frac{1}{2m}\sum_{i=1}^m (h_\theta(x^i)-y^i)^2$
+
+- Be clear on the difference between the hypothesis function $h(x)$ and the cost function $J(\theta_0, \theta_1)$.
+- Contour plot minimization in 3D space done to handle cost function $J(\theta_0, \theta_1)$.
 
 
 
