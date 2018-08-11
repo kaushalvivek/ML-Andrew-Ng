@@ -22,8 +22,8 @@ Equation for *Linear Regression*.
     $J(\theta_0,\theta_1)=\frac{1}{2m}\sum_{i=1}^m (h_\theta(x^i)-y^i)^2$
 
 - Be clear on the difference between the hypothesis function $h(x)$ and the cost function $J(\theta_0, \theta_1)$.
-- Contour plot minimization in 3D space done to handle cost function $J(\theta_0, \theta_1)$.
-
-
-
-
+- [Contour plots](https://en.wikipedia.org/wiki/Contour_line) and minimization in 3D space done to handle cost function $J(\theta_0, \theta_1)$.
+  
+- **Gradient Descent** is an algorithm to minimize the cost function. General functions like $J(\theta_0,\theta_1,...,\theta_n)$ can also be minimized, not limited to linear regression.
+- $\theta_j:=\theta_j-\alpha\frac{\delta}{\delta\theta_j}J(\theta_0,\theta_1) (for j=0,1)$
+is the basic equation for gradient descent. $\theta_j$ is updated with new values to reduce J. Here, $\alpha$ is the learning rate. Updates to $\theta_0 and \theta_1$ **should be simultaneous**. 
