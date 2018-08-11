@@ -13,6 +13,6 @@
         v
 x-->hypothesis (h)--> y
 ```
-h(x) = \theta; <sub>o</sub> + \theta;<sub>1</sub>x
+h(x) = $\theta{}$ <sub>o</sub> + $\theta$ <sub>1</sub>x
 
 
