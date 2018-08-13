@@ -25,5 +25,6 @@ Equation for *Linear Regression*.
 - [Contour plots](https://en.wikipedia.org/wiki/Contour_line) and minimization in 3D space done to handle cost function $J(\theta_0, \theta_1)$.
   
 - **Gradient Descent** is an algorithm to minimize the cost function. General functions like $J(\theta_0,\theta_1,...,\theta_n)$ can also be minimized, not limited to linear regression.
-- $\theta_j:=\theta_j-\alpha\frac{\delta}{\delta\theta_j}J(\theta_0,\theta_1) (for j=0,1)$
-is the basic equation for gradient descent. $\theta_j$ is updated with new values to reduce J. Here, $\alpha$ is the learning rate. Updates to $\theta_0 and \theta_1$ **should be simultaneous**. 
+- $\theta_j:=\theta_j-\alpha\frac{\delta}{\delta\theta_j}J(\theta_0,\theta_1)$ (for j=0,1)
+is the basic equation for gradient descent. $\theta_j$ is updated with new values to reduce J. Here, $\alpha$ is the learning rate. Updates to $\theta_0$ and $\theta_1$ **should be simultaneous**. 
+- In gradient descent, the learning rate should not be too high, else we entertain the risk of overshooting minimization and diverging. If learning rate is too low, then the algorithm would be slow.
