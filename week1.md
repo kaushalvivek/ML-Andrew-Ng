@@ -29,7 +29,9 @@ Equation for *Linear Regression*.
 is the basic equation for gradient descent. $\theta_j$ is updated with new values to reduce J. Here, $\alpha$ is the learning rate. Updates to $\theta_0$ and $\theta_1$ **should be simultaneous**. 
 - In gradient descent, the **learning rate** should not be too high, else we entertain the risk of overshooting minimization and diverging. If learning rate is too low, then the algorithm would be slow.
 - Linear Regression with Gradient Descent can be summarised as follows:  
-  $\theta_0:=\theta_0-\alpha \frac{1}{m}\sum_{i=1}^m(h_\theta(x_i)-y_i)$ 
+  
+  $\theta_0:=\theta_0-\alpha \frac{1}{m}\sum_{i=1}^m(h_\theta(x_i)-y_i)$  
+  
   $\theta_1:=\theta_1-\alpha \frac{1}{m}\sum_{i=1}^m((h_\theta(x_i)-y_i)x_i)$
 
 - These equations are derived by partial differentiation of $J(\theta_0,\theta_1)$ on $\theta_0$ and $\theta_1$.
