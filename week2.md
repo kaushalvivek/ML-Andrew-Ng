@@ -23,7 +23,7 @@
 - Linear models are inadequate for predictions at times, in such cases we move on to **Polynomial Regressions** with multi-dimensional models. The algorithm remains the same, it's just that the features are replaced with relevant degrees as per necessary. Do note that *Feature Scaling* becomes essential in Polynomial Regression.
 - **The Normal Equation Method** is an alternative to Gradient Descent for finding $\theta$. It's expression is as follows:
 
-  $\theta=(X^T X)^{-1} X^Ty$
+  $\theta=(X^T X)^{-1} \cdot X^T \cdot y$
 
   Here, rows of X are n+1 features for each instance of training data, y is the answer vector for training data. 
 
@@ -34,4 +34,4 @@
   - *Pros for Normal Equation :*
     - No need to choose learning rate $\alpha$.
     - No need to iterate.
-  - 
+- If there are too many features in comparison to m, then either deletion or regularisation of features is done.
