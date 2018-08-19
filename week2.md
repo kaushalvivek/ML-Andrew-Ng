@@ -35,3 +35,4 @@
     - No need to choose learning rate $\alpha$.
     - No need to iterate.
 - If there are too many features in comparison to m, then either deletion or regularisation of features is done.
+-* Notes are not made for Octave tutorials as enough resources are already avilable online for free.*
