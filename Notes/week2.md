@@ -35,3 +35,12 @@
     - No need to choose learning rate $\alpha$.
     - No need to iterate.
 - If there are too many features in comparison to m, then either deletion or regularisation of features is done.
+- *Notes are not made for basics of Octave tutorials as enough resources are already avilable online for free.*
+- Plotting involves the usage of ```plot (x,y)```.   
+  ```hold on```is used to hold current plot for further plotting.
+  ```plot (x,y,color)``` for giving color to plot.
+  ```xlabel, ylabel, title, legend``` used for making plot informative.
+  ```print -dpng 'name.png'``` for saving the plot.
+  ```figure(n)``` used to plot multiple figures where n is a natural number.
+  ```subplot(1,2,1)``` divides plot into a 1x2 grid. Use plot after this, then plot another graph after typing ```subplot(1,2,2)```.
+  ```axis[a b c d]``` sets x range from a to b and y range from c to d.
