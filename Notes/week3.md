@@ -34,6 +34,10 @@
   $\theta_j:=\theta_j-\alpha \frac{1}{m}\sum_{i=1}^m((h_\theta(x_i)-y_i)x_i)$
 
   but the definition of $h_\theta(x)$ has now changed.
+
+- Vectorised implementation:
+
+    $\theta = \theta - \frac{\alpha}{m} X^T (g(X\theta)-y)$
 ```
 --------------
 INCOMPLETE
