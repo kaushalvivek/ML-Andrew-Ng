@@ -17,8 +17,8 @@
   
 - **Cost Function for Logistic Regression:**
 
-    $Cost(h_\theta(x),y) = -log(h_\theta(x)) if y=1$  
-    $ -log(1-h_\theta(x)) if y=0$  
+    $Cost(h_\theta(x),y) = -log(h_\theta(x))$ if $y=1$
+            $ -log(1-h_\theta(x))$ if $y=0$  
 
     For implementation, this equation can be represented as
 
@@ -26,7 +26,7 @@
 
     Which implies that
 
-    $J(\theta) = -\frac{1}{m}[\sum_{i=1}^m -y^(i) log(h_\theta(x^(i))) - (1-y^(i)) log(1-h_\theta(x^(i)))]$
+    $J(\theta) = -\frac{1}{m}[\sum_{i=1}^m -y^i log(h_\theta(x^i)) - (1-y^i) log(1-h_\theta(x^i))]$
 
 - Minimization still done using gradient descent, with simultaneous updates to $\theta_j$
 - The algorithm remains
