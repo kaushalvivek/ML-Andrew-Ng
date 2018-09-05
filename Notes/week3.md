@@ -38,6 +38,24 @@
 - Vectorised implementation:
 
     $\theta = \theta - \frac{\alpha}{m} X^T (g(X\theta)-y)$
+
+- A problem with gradient descent is the manaual selection of learning rate that's done. Algorithms such as **Conjugate Descent, BFGS and L-BFGS** do not have this problem owing to a dynamic learning rate calculated by a clever inner loop. Hence, they have faster convergence. The inner loops are fairly complex and understanding them is not easy.
+- Implementation of advanced optimizaiton algorithms requires a specific structure to code it in Octave/MATLAB. Evaluation for $J(\theta)$ and $\frac{\delta}{\delta\theta_j}$:-
+
+```MATLAB
+function [jVal, gradient] = costFunction(theta)
+  jVal = [...code to compute J(theta)...];
+  gradient = [...code to compute derivative of J(theta)...];
+end
+```
+
+- For the advanced optmisation function itself, the code should be structured as follows:
+
+```MATLAB
+options = optimset('GradObj', 'on', 'MaxIter', 100);
+initialTheta = zeros(2,1);
+   [optTheta, functionVal, exitFlag] = fminunc(@costFunction, initialTheta, options);
+```
 ```
 --------------
 INCOMPLETE
