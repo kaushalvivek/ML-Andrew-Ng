@@ -56,6 +56,9 @@ options = optimset('GradObj', 'on', 'MaxIter', 100);
 initialTheta = zeros(2,1);
    [optTheta, functionVal, exitFlag] = fminunc(@costFunction, initialTheta, options);
 ```
+
+- In one-vs-all, train k parallel 2 class classifiers and then use a max function to take the classication that is the *most confident* about it's predictions.
+- 
 ```
 --------------
 INCOMPLETE
