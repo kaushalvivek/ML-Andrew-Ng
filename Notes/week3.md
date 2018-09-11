@@ -58,7 +58,27 @@ initialTheta = zeros(2,1);
 ```
 
 - In one-vs-all, train k parallel 2 class classifiers and then use a max function to take the classication that is the *most confident* about it's predictions.
-- 
+- **Overfitting** is when an algorithm tries too hard to be accurate for the training set and ends up not being generalised enough to make accurate predictions.
+- Ways to overcome overfitting:
+    - Select features to keep.
+    - Model selection algorithm.
+    - Regularization.
+- **Regularisation** is a technique to simplify cost functions by adding a term that *regularises* parameters.
+- An example of a cost function with added regularization is as follows:
+  
+    $J(\theta)=\frac{1}{2m}[\sum_{i=1}^m(h_\theta(x^i)iy^i)^2+\lambda\sum_{j=1}^n\theta^2_j$
+
+- If $\lambda$ is too big, then $\theta$ values are highly penalised and it fails to fit even basic test data. As $\theta$ values reduce close to zero, and what we get is $h_\theta(x)=\theta_o$
+- **$\theta_o$ is not penalised in Regularisation.**
+- Linear Regression update function with Regularisation:
+
+    $\theta_j = \theta_j(1-\frac{\lambda}{m})-\frac{\deltaJ}{\delta\theta}$
+    where J is the normal cost function.
+
+- For the Normal form, expression for $\theta$ changes to:
+
+    $\theta = (X^TX + \lambda\begin{matrix}0&0&..&0&0\\0&1&..&0&0\\.&.&.&.&.\\0&0&..&1&0\\0&0&..&0&1\end{matrix})^{-1}X^TY$
+        
 ```
 --------------
 INCOMPLETE
