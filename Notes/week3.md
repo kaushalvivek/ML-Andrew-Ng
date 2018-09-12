@@ -72,15 +72,20 @@ initialTheta = zeros(2,1);
 - **$\theta_o$ is not penalised in Regularisation.**
 - Linear Regression update function with Regularisation:
 
-    $\theta_j = \theta_j(1-\frac{\lambda}{m})-\frac{\delta J}{\delta\theta}$
-    where J is the normal cost function.
+    $\theta_j = \theta_j(1-\frac{\lambda}{m})-\frac{\delta J}{\delta\theta}$  
+    where J is the normal cost function.  
+    j ranges from 1 to n, updation is normal for $\theta_0$
 
 - For the Normal form, expression for $\theta$ changes to:
 
-    $\theta = (X^TX + \lambda matrix)^{-1}X^TY$
+    $\theta = (X^TX + \lambda matrix)^{-1}X^TY$  
     The *matrix* is n+1 x n+1 with first term 0, else Identical.
 
-- 
+- Logistic Regression update function with Regularisation:
+
+    $\theta_j = \theta_j(1-\frac{\lambda}{m})-\frac{\delta J}{\delta\theta}$  
+    where J is the normal cost function.  
+    j ranges from 1 to n, updation is normal for $\theta_0$
         
 ```
 --------------
