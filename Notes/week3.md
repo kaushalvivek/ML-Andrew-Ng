@@ -86,9 +86,3 @@ initialTheta = zeros(2,1);
     $\theta_j = \theta_j(1-\frac{\lambda}{m})-\frac{\delta J}{\delta\theta}$  
     where J is the normal cost function.  
     j ranges from 1 to n, updation is normal for $\theta_0$
-        
-```
---------------
-INCOMPLETE
---------------
-```
