@@ -17,17 +17,19 @@ grad = zeros(size(theta));
 %               Compute the partial derivatives and set grad to the partial
 %               derivatives of the cost w.r.t. each parameter in theta
 
-h = X*theta;
-log_term = (-y'*log(h)-(1-y)'*log(1-h));
-J = (1/m)*sum(log_term) + lambda/(2*m)*sum(theta.^2);
-% grad(1) = (1/m).*(X'(1,:)*(h-y))';
-grad(1)=1/m.*(sum(X(:,1)'*h-X(:,1)'*y));
+% Hypothesis Function
+h = sigmoid(X*theta);
 
-% grad=(1/m)*(X'*(h-y))'+lambda.*theta(:,1);
-% grad(1)=grad(1)-lambda.*theta(1,1); 
-for j=2:length(theta)
-    grad(j)=(1/m).*(sum(X(:,j)'*h-X(:,j)'*y)+lambda.*theta(j,1));
-end
+% Log term defined for Logistic Regression
+log_term = (-y'*log(h)-(1-y)'*log(1-h));
+
+% Cost, with regularisation and adjustment for first term.
+J = (1/m)*sum(log_term) + lambda/(2*m)*(sum(theta.^2)-theta(1,1)^2);
+
+% Gradient and regularisation with adjustment for first term.
+grad=(1/m)*(X'*(h-y))';
+grad(:,2:length(grad))=grad(:,2:length(grad))+(lambda/m)*theta(2:length(theta))';
+
 % =============================================================
 
 end
