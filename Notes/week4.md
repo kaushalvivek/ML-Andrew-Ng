@@ -19,6 +19,6 @@
 
 ```
 ----------
-IMCOMPLETE
+INCOMPLETE
 ----------
 ```
