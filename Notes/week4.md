@@ -7,4 +7,18 @@
 - If a network has $s_j$ units in layer $j$, $s_{j+1}$ units in layer $j+1$, then $\theta^{(j)}$ will be of dimension $s_{j+1} X (s_j+1)$.
 - A structural breakdown of $\theta$ for a 3 layer neural network:  
 
-![Image from Course](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/0rgjYLDeEeajLxLfjQiSjg_0c07c56839f8d6e8d7b0d09acedc88fd_Screenshot-2016-11-22-10.08.51.png?expiry=1537315200000&hmac=6z3E-CmCHRvVCIppE1J6PlPs6Wrywa933_fmxQHaaHA "Week 4, Andrew Ng : Machine Learning")
+![Image from Course](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/0rgjYLDeEeajLxLfjQiSjg_0c07c56839f8d6e8d7b0d09acedc88fd_Screenshot-2016-11-22-10.08.51.png?expiry=1537315200000&hmac=6z3E-CmCHRvVCIppE1J6PlPs6Wrywa933_fmxQHaaHA "Week 4, Andrew Ng : Machine Learning")  
+
+- **Forward Propagation** is a process used to compute values in a neural network, by defining a new term $z$. Neural network *learns it's own features* n number of times, where n is the number of layers in the neural network.
+- So, with $x = a^{(1)}$,  
+
+    $z^{(j)}=\theta^{(j-1)}a^{(j-1)}$  
+    where, $a^{(j)}=g(z^{(j)})$
+
+- **Neural Network Architecture** is how the layers are interconnected in a neural netowrk.
+
+```
+----------
+IMCOMPLETE
+----------
+```
